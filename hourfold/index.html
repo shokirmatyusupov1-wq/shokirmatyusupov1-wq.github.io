@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hourfold — Time tracking and invoicing for freelancers (concept)</title>
+  <meta name="description" content="Concept landing page for Hourfold, a fictional time tracking and invoicing app for freelancers. Built with plain HTML, CSS and JavaScript.">
+  <meta name="theme-color" content="#0d0d0d">
+  <meta property="og:title" content="Hourfold — concept landing page">
+  <meta property="og:description" content="Track time, turn hours into invoices, get paid. A fictional product, designed and built as a portfolio project.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="concept-bar" role="note">
+    Concept project: Hourfold is a fictional product. Designed and built by Shokir M. for a portfolio.
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Hourfold home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 9v14M21 9v14M11 16h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <span>Hourfold</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Open menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#try">Try it</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary btn-sm" href="#signup">Start free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Time tracking + invoicing</p>
+          <h1>Turn your hours into invoices <span class="script">in one click.</span></h1>
+          <p class="lead">Hourfold tracks the time you spend on each client and turns it into a clean, ready-to-send invoice. Less admin, faster payment.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#signup">Start free</a>
+            <a class="btn btn-ghost" href="#try">Build a sample invoice</a>
+          </div>
+          <p class="fine-print">Free plan for one client. No card needed.</p>
+        </div>
+
+        <div class="hero-visual" aria-label="Preview of the Hourfold app: a running timer and an invoice">
+          <div class="app-window">
+            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="app-body">
+              <div class="timer-card">
+                <p class="card-label">Now tracking</p>
+                <p class="timer-task">Website redesign</p>
+                <p class="timer-client">Bluefield Studio · $35/h</p>
+                <p class="timer-clock" id="hero-timer" aria-live="off">01:24:36</p>
+                <div class="timer-progress" aria-hidden="true"><span></span></div>
+              </div>
+              <div class="invoice-card">
+                <div class="invoice-head">
+                  <p class="card-label">Invoice HF-0042</p>
+                  <span class="pill">Ready to send</span>
+                </div>
+                <ul class="invoice-lines">
+                  <li><span>Design, 12h</span><span>$420.00</span></li>
+                  <li><span>Development, 9h</span><span>$315.00</span></li>
+                  <li><span>Revisions, 2h</span><span>$70.00</span></li>
+                </ul>
+                <div class="invoice-total"><span>Total</span><strong>$805.00</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Features</p>
+          <h2>Everything between "start timer" and "paid"</h2>
+          <p>Built for freelancers who bill by the hour and would rather work than do paperwork.</p>
+        </div>
+        <ul class="feature-grid">
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></span>
+            <h3>One-click timer</h3>
+            <p>Start, pause and switch tasks from any device. Forgot to start? Add time by hand.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4zM8 7V5h8v2"/></svg></span>
+            <h3>Clients and rates</h3>
+            <p>Set a rate per client or per project. Hourfold applies the right one automatically.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6zM14 3v5h5M9 13h7M9 17h5"/></svg></span>
+            <h3>Invoices from tracked time</h3>
+            <p>Pick a date range and every tracked hour becomes a line on the invoice.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+            <h3>Any currency</h3>
+            <p>Bill clients abroad in USD, EUR or GBP, with your own tax settings.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8M10 20a2 2 0 0 0 4 0"/></svg></span>
+            <h3>Polite reminders</h3>
+            <p>Unpaid invoice? Hourfold sends a friendly reminder so you don't have to.</p>
+          </li>
+          <li class="feature">
+            <span class="feature-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <h3>Clear reports</h3>
+            <p>See which clients and projects earn the most, week by week.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-alt" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Three steps, no spreadsheets</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Add a client</h3>
+            <p>Name, currency and hourly rate. Takes under a minute.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Track your work</h3>
+            <p>Run the timer while you work, or log hours at the end of the day.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Send the invoice</h3>
+            <p>Review the generated invoice, then send it or save it as a PDF.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Interactive invoice builder -->
+    <section id="try" class="section" aria-labelledby="try-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Try it</p>
+          <h2 id="try-title">Build a sample invoice</h2>
+          <p>Change the hours and rates, add lines, pick a currency. The totals update as you type, and you can save the result as a PDF.</p>
+        </div>
+
+        <div class="builder">
+          <form class="builder-form" id="builder" novalidate>
+            <div class="field-row">
+              <label class="field">Client
+                <input type="text" id="b-client" value="Bluefield Studio" autocomplete="off">
+              </label>
+              <label class="field">Currency
+                <select id="b-currency">
+                  <option value="USD">USD ($)</option>
+                  <option value="EUR">EUR (€)</option>
+                  <option value="GBP">GBP (£)</option>
+                </select>
+              </label>
+            </div>
+
+            <fieldset class="lines">
+              <legend>Line items</legend>
+              <div class="line line-head" aria-hidden="true">
+                <span>Description</span><span>Hours</span><span>Rate</span><span></span>
+              </div>
+              <div id="b-lines"></div>
+              <button type="button" class="btn btn-ghost btn-sm" id="b-add">+ Add line</button>
+            </fieldset>
+
+            <label class="field field-narrow">Tax (%)
+              <input type="number" id="b-tax" value="0" min="0" max="100" step="0.5" inputmode="decimal">
+            </label>
+          </form>
+
+          <article class="invoice-preview" id="invoice-preview" aria-labelledby="pv-title">
+            <header class="pv-head">
+              <div>
+                <p class="pv-brand">Hourfold</p>
+                <h3 id="pv-title">Invoice HF-0042</h3>
+              </div>
+              <p class="pv-meta">Billed to<br><strong id="pv-client">Bluefield Studio</strong><br><span id="pv-date"></span></p>
+            </header>
+            <table class="pv-table">
+              <thead><tr><th scope="col">Item</th><th scope="col">Hours</th><th scope="col">Amount</th></tr></thead>
+              <tbody id="pv-lines"></tbody>
+            </table>
+            <dl class="pv-totals">
+              <div><dt>Subtotal</dt><dd id="pv-subtotal">$0.00</dd></div>
+              <div><dt>Tax</dt><dd id="pv-tax">$0.00</dd></div>
+              <div class="pv-grand"><dt>Total due</dt><dd id="pv-total">$0.00</dd></div>
+            </dl>
+            <button type="button" class="btn btn-dark" id="b-print">Save as PDF</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-alt" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2 id="pricing-title">Simple plans that grow with you</h2>
+          <div class="billing-toggle" role="group" aria-label="Billing period">
+            <button type="button" class="toggle-btn is-active" data-period="monthly" aria-pressed="true">Monthly</button>
+            <button type="button" class="toggle-btn" data-period="yearly" aria-pressed="false">Yearly <span class="save">2 months free</span></button>
+          </div>
+        </div>
+        <ul class="plans">
+          <li class="plan">
+            <h3>Starter</h3>
+            <p class="price"><span class="amount" data-monthly="0" data-yearly="0">$0</span><span class="per">/month</span></p>
+            <p class="plan-note">For trying Hourfold with one client.</p>
+            <ul class="plan-list">
+              <li>1 client</li><li>Unlimited time tracking</li><li>3 invoices per month</li>
+            </ul>
+            <a class="btn btn-ghost" href="#signup">Start free</a>
+          </li>
+          <li class="plan plan-featured">
+            <p class="plan-badge">Most popular</p>
+            <h3>Pro</h3>
+            <p class="price"><span class="amount" data-monthly="9" data-yearly="7.5">$9</span><span class="per">/month</span></p>
+            <p class="plan-note">For full-time freelancers.</p>
+            <ul class="plan-list">
+              <li>Unlimited clients</li><li>Unlimited invoices</li><li>Payment reminders</li><li>Reports</li>
+            </ul>
+            <a class="btn btn-primary" href="#signup">Choose Pro</a>
+          </li>
+          <li class="plan">
+            <h3>Team</h3>
+            <p class="price"><span class="amount" data-monthly="19" data-yearly="15.83">$19</span><span class="per">/user/month</span></p>
+            <p class="plan-note">For small studios and agencies.</p>
+            <ul class="plan-list">
+              <li>Everything in Pro</li><li>Shared clients and projects</li><li>Team time reports</li>
+            </ul>
+            <a class="btn btn-ghost" href="#signup">Choose Team</a>
+          </li>
+        </ul>
+        <p class="fine-print center">Sample prices for this concept. Yearly plans are billed once a year.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Questions, answered</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Can I add time I forgot to track?</summary>
+            <p>Yes. You can add or edit entries by hand at any time, and they appear on the next invoice like any other hours.</p>
+          </details>
+          <details>
+            <summary>Do my clients need an account?</summary>
+            <p>No. Clients receive a link to view and download the invoice as a PDF.</p>
+          </details>
+          <details>
+            <summary>Can I use different rates for different projects?</summary>
+            <p>Yes. Set a default rate per client and override it for any project or single task.</p>
+          </details>
+          <details>
+            <summary>Which currencies are supported?</summary>
+            <p>In this concept, USD, EUR and GBP. Each client keeps its own currency.</p>
+          </details>
+          <details>
+            <summary>Is Hourfold a real product?</summary>
+            <p>No. Hourfold is a fictional product. This page was designed and built as a portfolio project to show landing page design and front-end development.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup -->
+    <section id="signup" class="section cta" aria-labelledby="cta-title">
+      <div class="container container-narrow cta-inner">
+        <h2 id="cta-title">Spend less time on <span class="script">paperwork</span></h2>
+        <p>Join the early access list and get the Pro plan free for three months.</p>
+        <form class="signup-form" id="signup-form" novalidate>
+          <label for="email" class="sr-only">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button type="submit" class="btn btn-primary">Get early access</button>
+        </form>
+        <p class="form-status" id="signup-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Hourfold. A fictional product.</p>
+      <p>Concept landing page designed and built by Shokir M. Plain HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
