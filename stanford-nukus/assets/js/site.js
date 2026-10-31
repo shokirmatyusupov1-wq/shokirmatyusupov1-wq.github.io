@@ -16,7 +16,7 @@
       burger.addEventListener('click', () => {
         const open = root.classList.toggle('menu-open');
         burger.setAttribute('aria-expanded', String(open));
-        burger.setAttribute('aria-label', open ? 'Menyuni yopish' : 'Menyuni ochish');
+        burger.setAttribute('aria-label', open ? (burger.dataset.closeLabel || 'Menyuni yopish') : (burger.dataset.openLabel || 'Menyuni ochish'));
       });
       header.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', close));
       addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
@@ -53,7 +53,7 @@
   });
 
   // ---------- lead forms ----------
-  // NOTE: no data is sent anywhere yet. When iTeach approves, post the form to their CRM here.
+  // NOTE: demo only, no data is sent anywhere. When the client approves, send the form to their Telegram bot or CRM here.
   document.querySelectorAll('form[data-form="lead"]').forEach(form => {
     const fieldOf = el => el.closest('.field');
     const check = el => {
